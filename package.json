@@ -1,6 +1,6 @@
 {
   "name": "@nguyentrongtk127/npm-package",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -30,6 +30,6 @@
   },
   "files": [
     "lib/**/*",
-    "binance.*"
+    "index.*"
   ]
 }

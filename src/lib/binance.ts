@@ -1,11 +1,11 @@
 import { CoinmapExchange } from './coinmap';
-import { futureMarketOrder } from './lib/binance/futures-order';
+import { futureMarketOrder } from './binance/futures-order';
 
 export class BinanceExchange extends CoinmapExchange {
   key: string;
-  constructor(options: { key: string; db?: string }) {
-    super({ db: options.db });
-    this.key = options.key;
+  constructor(key: string, options?: { db?: string }) {
+    super(options);
+    this.key = key;
   }
   marketOrder(symbol: string, price: string): string {
     const text = `${this.key} request ${symbol}: ${price}`;
